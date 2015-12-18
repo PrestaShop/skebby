@@ -24,16 +24,17 @@
 * International Registered Trademark & Property of PrestaShop SA
 */
 
-include (dirname(__FILE__).'/../../config/config.inc.php');
-include (dirname(__FILE__).'/skebby.php');
+include(dirname(__FILE__).'/../../config/config.inc.php');
+include(dirname(__FILE__).'/skebby.php');
 
 header('Content-Type: application/json');
 
-if (Tools::getValue('token') != Tools::encrypt(Configuration::get('PS_SHOP_NAME')))
-	die('Error: Invalid Token');
+if (Tools::getValue('token') != Tools::encrypt(Configuration::get('PS_SHOP_NAME'))) {
+    die('Error: Invalid Token');
+}
 
 
-$date=date_create();
+$date = date('Y-m-d H:i:s');
 
 $skebby_module = new Skebby();
 
@@ -43,7 +44,7 @@ $params['civility'] = 'Mr.';
 $params['first_name'] = 'Matteo';
 $params['last_name'] = 'Monti';
 $params['order_price'] = 'EUR 10.15';
-$params['order_date'] = date_format($date,'Y-m-d H:i:s');
+$params['order_date'] = Tools::displayDate($date);
 $params['order_reference'] = 'ABCDEFGHI';
 
 $params['currency'] = '€';
