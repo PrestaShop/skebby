@@ -3,7 +3,7 @@
 	<name>skebby</name>
 	<displayName><![CDATA[Skebby SMS]]></displayName>
 	<version><![CDATA[1.0.0]]></version>
-	<description><![CDATA[With Skebby SMS module for Prestashop you will be able to integrate all the Skebby features with no coding. This module requires to have an account with skebby and have available credit.]]></description>
+	<description><![CDATA[Send and receive automatic SMS notification alerts on order status of your PrestaShop store and use the web interface Skebby.it for sending promotional SMS campaigns that increase sales! Official PrestaShop partner: try it now with 100 SMS free!]]></description>
 	<author><![CDATA[Skebby Dev Team]]></author>
 	<tab><![CDATA[emailing]]></tab>
 	<confirmUninstall><![CDATA[Are you sure you want to uninstall? You will not be able to send sms notifications.]]></confirmUninstall>
