@@ -1,7 +1,7 @@
 Skebby PrestaShop module
 ---------------------------------------------------------------------
 
-Copyright (C) 2014 https://www.skebby.it 
+Copyright (C) 2015 https://www.skebby.it 
 
 You can freely use this module in your PrestaShop e-commerce website.
 Please send your questions & comments to supporto@skebby.com
