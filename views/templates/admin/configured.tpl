@@ -34,16 +34,12 @@
 			<p>{l s='Send 10/100/1000 SMS with your special offers and discounts!' mod='skebby'}</p>
 		</div>
 		<div class="col-md-6 text-center">
-		
-			<img src="/modules/skebby/img/home-portatile.jpg"><br/>
-			
+			<img src="{$this_path|escape:'htmlall':'UTF-8'}views/img/home-portatile.jpg"><br/>
 			<a target="_blank" href="http://smsmessenger.skebby.it" id="A_1">{l s='GO TO YOUR WEB PANEL' mod='skebby'}</a>
-		
-	
 		</div>
-	
 	</div>
-
 </div>
+
+
 
 
