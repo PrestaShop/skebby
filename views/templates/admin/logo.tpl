@@ -46,6 +46,7 @@
     outline: rgb(255, 255, 255) none 0px;
     padding: 5px 20px;
     transition: all 0.1s ease 0s;
+    background-color:rgb(80, 143, 205);
 }
 
 
@@ -65,6 +66,7 @@
     font: normal normal bold normal 15px/normal arial;
     outline: rgb(255, 255, 255) none 0px;
     padding: 5px 20px;
+    background-color:rgb(242, 101, 34);
 }
 
 
@@ -100,5 +102,5 @@
 </style>
 
 <div  style="margin-bottom:20px;">
-	<img src="/modules/skebby/img/sms-gratis-business.png" />
+	<img src="{$this_path|escape:'htmlall':'UTF-8'}views/img/sms-gratis-business.png" />
 </div>
