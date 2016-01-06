@@ -45,7 +45,7 @@ window.Skebby.Client = window.Skebby.Client || {};
 window.Skebby.Client.defaultCurrency = '€';
 
 window.Skebby.Client.checkCredit = function(token) {
-	$.getJSON('/modules/skebby/checkcredit.php?token=' + token).then(function(data) {
+	$.getJSON('{$base_url}checkcredit.php?token=' + token).then(function(data) {
 		if (data && data.status && data.status === 'success') {
 			var creditText = window.Skebby.Client.defaultCurrency + ' ' + data.credit_left;
 			$('#credit-response').html(creditText).removeClass('alert-danger').addClass('alert-success').show();
@@ -58,7 +58,7 @@ window.Skebby.Client.checkCredit = function(token) {
 
 
 window.Skebby.Client.testOrderSMS = function(token) {
-	$.getJSON('/modules/skebby/testordermessage.php?token=' + token).then(function(data) {
+	$.getJSON('{$base_url}testordermessage.php?token=' + token).then(function(data) {
 		if (data && data.status && data.status === 'success') {
 			alert("{l s='SMS successfully sent.' mod='skebby' js=1}");
 		} else {
@@ -68,7 +68,7 @@ window.Skebby.Client.testOrderSMS = function(token) {
 };
 
 window.Skebby.Client.testShipmentSMS = function(token) {
-	$.getJSON('/modules/skebby/testshipmentnotification.php?token=' + token).then(function(data) {
+	$.getJSON('{$base_url}testshipmentnotification.php?token=' + token).then(function(data) {
 		if (data && data.status && data.status === 'success') {
 			alert("{l s='SMS successfully sent.' mod='skebby' js=1}");
 		} else {
@@ -79,13 +79,13 @@ window.Skebby.Client.testShipmentSMS = function(token) {
 
 $(document).ready(function(){
 	$("#credit_btn").on('click', function(){
-		window.Skebby.Client.checkCredit('{$token|escape:'stringval'}');
+		window.Skebby.Client.checkCredit('{$token|escape:'htmlall':'UTF-8'}');
 	});
 	$("#test_btn").on('click', function(){
-		window.Skebby.Client.testOrderSMS('{$token|escape:'stringval'}');
+		window.Skebby.Client.testOrderSMS('{$token|escape:'htmlall':'UTF-8'}');
 	});
 	$("#testshipment_btn").on('click', function(){
-		window.Skebby.Client.testShipmentSMS('{$token|escape:'stringval'}');
+		window.Skebby.Client.testShipmentSMS('{$token|escape:'htmlall':'UTF-8'}');
 	});
 });
 

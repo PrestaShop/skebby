@@ -24,14 +24,15 @@
 * International Registered Trademark & Property of PrestaShop SA
 */
 
-include (dirname(__FILE__).'/../../config/config.inc.php');
-include (dirname(__FILE__).'/skebby.php');
+include(dirname(__FILE__).'/../../config/config.inc.php');
+include(dirname(__FILE__).'/skebby.php');
 
 
 header('Content-Type: application/json');
 
-if (Tools::getValue('token') != Tools::encrypt(Configuration::get('PS_SHOP_NAME')))
-	die('Error: Invalid Token');
+if (Tools::getValue('token') != Tools::encrypt(Configuration::get('PS_SHOP_NAME'))) {
+    die('Error: Invalid Token');
+}
 
 $skebby = new Skebby();
 echo Tools::jsonEncode($skebby->getCredit());

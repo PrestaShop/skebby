@@ -32,21 +32,16 @@
 				<li>{l s='Send automatically an SMS to your customers upon the change of status of their order and/or the goods shipment.' mod='skebby'}</li>
 			</ul>
 			<p>{l s='Register to activate the Skebby SMS module.' mod='skebby'}</p>
-	
 			<div class="text-center mt50">
-
 				<a target="_blank" href="http://www.skebby.it/business/servizi-sms-di-massa/?ac=3271487" id="B_1">{l s='SIGN UP AND ENABLE SMS NOTIFICATION' mod='skebby'}<br/>{l s='100 SMS FREE' mod='skebby'}</a>
-
 			</div>
-			
 		</div>
 		<div class="col-md-6">
 			<div class="video-container">
-				<iframe width="420" height="315" src="https://www.youtube.com/embed/uuItWmtSatk" frameborder="0" allowfullscreen></iframe>
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/dnimqzkFMD0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
-
 </div>
 
 
@@ -62,17 +57,8 @@
 			<p>{l s='97.5% of SMS read within 30 seconds of receiving. 90% of those who have mobile phone use SMS' mod='skebby'}</p>
 		</div>
 		<div class="col-md-6 text-center">
-		
-			<img src="/modules/skebby/img/home-portatile.jpg"><br/>
-
+			<img src="{$this_path|escape:'htmlall':'UTF-8'}views/img/home-portatile.jpg"><br/>
 			<a target="_blank" href="http://www.skebby.it/business/index/demo-web/?ac=3271487" id="A_1">{l s='WATCH THE DEMO SMS FROM WEB' mod='skebby'}</a>
-
-		
-	
 		</div>
-	
 	</div>
-
 </div>
-
-
