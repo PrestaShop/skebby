@@ -1098,7 +1098,7 @@ class Skebby extends Module
             return;
         }
 
-            // general
+        // general
         $this->logMessage('SKEBBY_PASSWORD: '.Tools::getValue('SKEBBY_PASSWORD'));
         $this->logMessage('SKEBBY_USERNAME: '.Tools::getValue('SKEBBY_USERNAME'));
         $this->logMessage('SKEBBY_DEFAULT_QUALITY: '.Tools::getValue('SKEBBY_DEFAULT_QUALITY'));
@@ -1342,7 +1342,7 @@ class Skebby extends Module
         $page = ($page = Tools::getValue('submitFilter'.$helper_list->table)) ? $page : 1;
         $pagination = ($pagination = Tools::getValue($helper_list->table.'_pagination')) ? $pagination : 50;
         $subscribers = $this->paginateSubscribers($customers, $page, $pagination);
-        return $helper_list->generateList($customers, $fields_list);
+        return $helper_list->generateList($subscribers, $fields_list); //return $helper_list->generateList($customers, $fields_list);
     }
 
 
